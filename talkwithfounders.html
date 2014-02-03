@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3VOT Talk with our Founders - Front End as a Service </title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body class="container">
+
+	<div class="row">
+		<nav class="navbar navbar-fixed-top" style="z-index:1" role="navigation">
+    	  <ul class="nav navbar-nav">
+    	    <li class="dropdown">
+    		    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="svg-link" src="assets/3vot-logo-darkgray.svg" alt=""></a>
+    	      <ul class="dropdown-menu">
+    	      	<li><a href="index.html">Home</a></li>
+    	        <li><a href="features.html">Features</a></li>
+    	        <li><a href="gettingstarted.html">Getting Started</a></li>
+    	        <li><a href="talkwithfounders.html">Talk with a Founder</a></li>
+    	      </ul>
+    	    </li>
+    	  </ul>
+		</nav>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<header class="internal-header">
+				<br><br><br>	
+				<h1 class="text-center text-invert">Talk with our Founders</h1>
+			</header>
+		</div>
+	</div>
+
+	<section class="page-main-section">
+
+		<div class="row">
+			
+			<section class="">
+				<br>
+				<h2 class="text-center">We are easy to talk to...</h1>
+				<h3 class="text-center">Just type your name  and number, we'll get back to you</h3>
+				<br>
+			</section>
+
+			<div class="form">
+
+				<form role="form" action="http://peaceful-anchorage-9756.herokuapp.com/register/talk" method="POST" class="form-horizontal form-talk-by-phone">
+					<div class="row">
+
+						<div class="input-group col-md-4 col-md-offset-4">
+						  <span class="input-group-addon"><label for="inputEmail3">Name</label></span>
+						  <input type="text" required="" name="CustomerName " class="form-control input-lg" placeholder="Jenny">
+						</div>	
+						<br>
+						<div class="input-group col-md-4 col-md-offset-4">
+						  <span class="input-group-addon"><label for="inputPassword3">Mobile</label></span>
+						  <input type="phone" required="" name="CustomerPhone" class="form-control  input-lg" placeholder="+1 800 867 5309">
+						</div>
+
+						<input type="hidden" name="Action" value="Talk">
+						<input type="hidden" name="to" value="8085460736">
+						<input type="hidden" name="from" value="8083540011">
+						<input type="hidden" name="redirectTo" value="/talkToUs-thanks.html">
+						<div class="col-md-4 col-md-offset-4 text-center">
+							<br>
+							<span class="help-block">Include country code. EJ USA: <strong>+1</strong> 546 123 3344</span>
+							<br>
+							<button type="submit" class="btn btn-lg btn-default">Call me back</button>
+						</div>
+
+					</div>
+				</form>
+				<br><br><br>
+				<div class="row">
+					<h2 class="text-center">or you can also....</h2>
+				</div>
+			</div>
+
+		</div>
+
+
+	
+	</section>
+
+	<br><br>	
+
+
+	<div class="row ">
+		<div class="col-md-12 text-center bg-warning">
+			<br>
+			<h3 class="text-invert">Ask for your beta account now!</h3>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+					<div class="input-group">
+				    	<input type="text" class="form-control input-lg" placeholder="email@example.com">
+				    	<span class="input-group-btn">
+				    		<button class="btn btn-default btn-lg text-warning" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+				    	</span>
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+			<br><br>
+		</div>
+
+	</div>
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

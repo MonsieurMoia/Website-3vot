@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3VOT Getting Started - Front End as a Service </title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body class="container">
+
+	<div class="row">
+		<nav class="navbar navbar-fixed-top" style="z-index:1" role="navigation">
+    	  <ul class="nav navbar-nav">
+    	    <li class="dropdown">
+    		    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="svg-link" src="assets/3vot-logo-darkgray.svg" alt=""></a>
+    	      <ul class="dropdown-menu">
+    	      	<li><a href="index.html">Home</a></li>
+    	        <li><a href="features.html">Features</a></li>
+    	        <li><a href="gettingstarted.html">Getting Started</a></li>
+    	        <li><a href="talkwithfounders.html">Talk with a Founder</a></li>
+    	      </ul>
+    	    </li>
+    	  </ul>
+		</nav>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<header class="internal-header">
+				<br><br><br>	
+				<h1 class="text-center text-invert">Getting Started</h1>
+			</header>
+		</div>
+	</div>
+
+	<section class="page-main-section">
+
+		<div class="row">
+			<section class="page-steps-section">
+				<br>
+				<article class="col-md-10 col-md-offset-1"><h1 class="page-step">
+<a name="3vot-cli" class="anchor" href="#3vot-cli"><span class=""></span></a>3VOT-CLI</h1>
+
+<p>3VOT helps you build and deploy apps quicker. We call it Frontend as a Service.</p>
+
+<p>You can build apps with any javascript framework and style them the best way you can. </p>
+
+<p>3VOT embraces the concept of modules and web components, you can re-use any component from NPM and Bower. It's an amazing way to build Quality Apps in a few days, that's 5x faster.</p>
+
+<p>3VOT is also a community so you can simply copy an app for free, to your profile and start using as you own; or make a few changes to make it a perfect fit. Developers and Entrepreneurs can also build, customize and sell you amazing apps;</p>
+
+<p>Here is the Information for the Developer to get started, but even if you are not a developer: give it a try.</p>
+
+<h4>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h4>
+
+<ul>
+<li><a href="http://nodejs.org/">NodeJS</a></li>
+<li><a href="https://github.com/">Git</a></li>
+</ul><h4>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h4>
+
+<ul>
+<li><a href="#console">If you are working ON YOUR CONSOLE</a></li>
+<li><a href="#nitrous">If you are using NITROUS.IO or cloud9</a></li>
+</ul>
+<h2 class="page-step">
+<a name="-getting-started---on-your-console" class="anchor" href="#-getting-started---on-your-console"><span class="octicon octicon-link"></span></a><a name="console"></a> Getting Started - ON YOUR CONSOLE</h2>
+
+<h3>
+<a name="-step-1---install-3vot-cli" class="anchor" href="#-step-1---install-3vot-cli"><span class="octicon octicon-link"></span></a><a name="install"></a> Step 1 - Install 3vot-cli</h3>
+
+<p>Open the console (cmd) and install the 3VOT-CLI ( the tool to build, download and deploy apps )</p>
+
+<pre><code> npm install 3vot-cli -g
+</code></pre>
+
+<h3>
+<a name="-step-2---create-a-3vot-project" class="anchor" href="#-step-2---create-a-3vot-project"><span class="octicon octicon-link"></span></a><a name="create"></a> Step 2 - Create a 3vot project</h3>
+
+<p>On your console, choose a folder to install 3vot and type:</p>
+
+<pre><code> 3vot setup
+</code></pre>
+
+<p>The console will ask for a Developer Key. If you don't have one yet you can use ' 0 ' for a demo.</p>
+
+<p>This step will create the folder structure of a 3vot project and download all required dependencies from NPM. </p>
+
+<p>If you used the demo key ' 0 ' , setup will download a Tutorial folder also.</p>
+
+<h3>
+<a name="-step-3---downloading-an-app" class="anchor" href="#-step-3---downloading-an-app"><span class="octicon octicon-link"></span></a><a name="download"></a> Step 3 - Downloading an app</h3>
+
+<p>3VOT Setup generates a project folder for your profile. In this case, the profile name is cli_test
+Go inside the Test folder</p>
+
+<pre><code> cd 3vot_cli_test
+</code></pre>
+
+<p>Now let’s Download the tutorial app, courtesy of 3VOT ;)</p>
+
+<pre><code> 3vot download
+</code></pre>
+
+<p>The console will ask for the name of the app you want to download, in this case select the app:  'gold'</p>
+
+<pre><code>App: ( The App you want to download ):  gold
+</code></pre>
+
+<p>Then it will ask for the provider of the app, in this case is '3vot'</p>
+
+<pre><code>Profile: ( The profile name of the owner of the app ):  3vot 
+</code></pre>
+
+<p>Now you have a tutorial app in your folder with it's dependencies from NPM and Bower, next step is to Run it.</p>
+
+<h3>
+<a name="step-4---running-the-tutorial-app" class="anchor" href="#step-4---running-the-tutorial-app"><span class="octicon octicon-link"></span></a>Step 4 - Running the Tutorial App</h3>
+
+<p>Make sure you are on your Tutorial App folder '3vot_cli_test' and Run the app by typing <code>3vot server</code></p>
+
+<pre><code> 3vot server
+</code></pre>
+
+<p>This will start a development server, to check the app running just point your browser to : <code>http://localhost:3000/tutorial/gold</code></p>
+
+<h3>
+<a name="step-5---modifying-the-app" class="anchor" href="#step-5---modifying-the-app"><span class="octicon octicon-link"></span></a>Step 5 - Modifying the App</h3>
+
+<p>Let's make changes to your app, go ahead and change the header in the following file:  <code>3vot_tutorial/apps/gold/templates/layout.html</code></p>
+
+<pre><code>...
+&lt;div class="row"&gt;
+            &lt;h1&gt;CHANGE THIS HEADER&lt;/h1&gt;
+      &lt;ul class="nav nav-pills nav-stacked col-md-2"&gt;
+...
+</code></pre>
+
+<p>Save your changes and refresh your browser to see them.</p>
+
+<h3>
+<a name="step-6---uploading-the-app" class="anchor" href="#step-6---uploading-the-app"><span class="octicon octicon-link"></span></a>Step 6 - Uploading the App</h3>
+
+<p>If you have uploaded the app before you need to increment the version in your app's package.json file, located in <code>apps/gold/package.json</code> , this will allow you to check any running version later, if this is your first time uploading an app skip this.</p>
+
+<pre><code>{
+    "name": "gold",
+    "version": "0.0.1",
+    "profile": "cli_test",
+    "private": true,
+    "scripts": {
+        "start": "node app.js",
+        "test": "grunt build --verbose"
+}
+</code></pre>
+
+<p>Now Upload the app using :</p>
+
+<pre><code>3vot upload 
+</code></pre>
+
+<p>The console will ask for the name of the app you want to upload, write the name <code>gold</code> in this case.</p>
+
+<pre><code>App: ( the name of the app you want to upload ): gold
+</code></pre>
+
+<p>This will upload the App to your profile, you'll later be able to publish it to the world.</p>
+
+<p>It will also deploy a demo of your app in <code>http://demo.3vot.com/tutorial/gold_0.0.xx</code> just change the last xx for the version of the app you want to check.</p>
+
+<h4>
+<a name="step-8---publishing-the-app" class="anchor" href="#step-8---publishing-the-app"><span class="octicon octicon-link"></span></a>Step 8 - Publishing the App</h4>
+
+<p>When you have a demo that you think it's a winner and want to publish it to the world just type:</p>
+
+<pre><code>3vot publish 
+</code></pre>
+
+<p>The console will ask for the name of the app you want to publish, in this case let's publish our app <code>gold</code>.</p>
+
+<pre><code>gold
+</code></pre>
+
+<p>You can access your published app in <code>demo.3vot.com/profile/app/index.html</code></p>
+
+<pre><code>http://demo.3vot.com/cli_test/gold/index.html
+</code></pre>
+
+<p>And you're done!</p>
+
+<h2 class="page-step">
+<a name="-getting-started---using-nitrousio" class="anchor" href="#-getting-started---using-nitrousio"><span class="octicon octicon-link"></span></a><a name="nitrous"></a> Getting Started - USING NITROUS.IO</h2>
+
+<h4>
+<a name="step-1-on-nitrousio---create-a-new-box" class="anchor" href="#step-1-on-nitrousio---create-a-new-box"><span class="octicon octicon-link"></span></a>Step 1 (On Nitrous.io) - Create a New Box</h4>
+
+<p>Create a New Box containing Node.Js, we'll name it <code>tutorial3vot</code>.</p>
+
+<h4>
+<a name="step-2-on-nitrousio---install-3vot-cli" class="anchor" href="#step-2-on-nitrousio---install-3vot-cli"><span class="octicon octicon-link"></span></a>Step 2 (On Nitrous.io) - Install 3vot-cli</h4>
+
+<p>On Nitrous console install the 3VOT-CLI ( the tool to build, download and deploy apps )</p>
+
+<pre><code> npm install 3vot-cli -g
+</code></pre>
+
+<h4>
+<a name="step-3-on-nitrousio---create-a-3vot-project" class="anchor" href="#step-3-on-nitrousio---create-a-3vot-project"><span class="octicon octicon-link"></span></a>Step 3 (On Nitrous.io) - Create a 3vot project</h4>
+
+<p>On the console, choose a folder to install 3vot and type:</p>
+
+<pre><code> 3vot setup
+</code></pre>
+
+<p>The console will ask for a Developer Key. If you don't have one yet you can use ' 0 ' for a demo.</p>
+
+<p>This step will create the folder structure of a 3vot project and download all required dependencies from NPM. </p>
+
+<p>If you used the demo key ' 0 ' , setup will download a Tutorial folder also.</p>
+
+<h4>
+<a name="step-4-on-nitrousio---downloading-an-app" class="anchor" href="#step-4-on-nitrousio---downloading-an-app"><span class="octicon octicon-link"></span></a>Step 4 (On Nitrous.io) - Downloading an app</h4>
+
+<p>3VOT Setup generates a project folder for your profile. In this case, the profile name is cli_test
+Go inside the Test folder</p>
+
+<pre><code> cd 3vot_cli_test
+</code></pre>
+
+<p>Now let’s Download the tutorial app, courtesy of 3VOT ;)</p>
+
+<pre><code> 3vot download
+</code></pre>
+
+<p>The console will ask for the name of the app you want to download, in this case select the app:  'gold'</p>
+
+<pre><code>App: ( The App you want to download ):  gold
+</code></pre>
+
+<p>Then it will ask for the provider of the app, in this case is '3vot'</p>
+
+<pre><code>Profile: ( The profile name of the owner of the app ):  3vot 
+</code></pre>
+
+<p>Now you have a tutorial app in your folder with it's dependencies from NPM and Bower, next step is to Run it.</p>
+
+<h4>
+<a name="step-5-on-nitrousio---running-the-tutorial-app" class="anchor" href="#step-5-on-nitrousio---running-the-tutorial-app"><span class="octicon octicon-link"></span></a>Step 5 (On Nitrous.io) - Running the Tutorial App</h4>
+
+<p>Make sure you are on your Tutorial App folder '3vot_cli_test' and Run the app by typing <code>3vot server</code></p>
+
+<pre><code> 3vot server
+</code></pre>
+
+<p>The console will ask for the preview domain where you can check your app, for this just select the <code>Boxes</code> option located on the top right menu of the Nitrous IDE. </p>
+
+<p>Inside the <code>tutorial3vot</code> box we created should be the <code>Preview URI</code> address we need, use that one on the nitrous console without the <code>http://</code> or trailing slashes <code>/</code>. </p>
+
+<pre><code>Example: Domain: ( If you are on nitrous.io type the preview domain with out http:// or trailing slashes / ) :  tutorial3vot-73872-use1.nitrousbox.com
+</code></pre>
+
+<p>This will start a development server, to check the app running using nitrous just point your browser to your <code>previewURI/profile/app</code> .</p>
+
+<pre><code>Example: tutorial3vot-73872-use1.nitrousbox.com/cli_test/gold
+</code></pre>
+
+<h4>
+<a name="step-6-on-nitrousio---modifying-the-app" class="anchor" href="#step-6-on-nitrousio---modifying-the-app"><span class="octicon octicon-link"></span></a>Step 6 (On Nitrous.io) - Modifying the App</h4>
+
+<p>Let's make changes to your app, go ahead and change the header in the following file:<br><code>
+3vot_cli_test/apps/gold/templates/layout.html
+</code></p>
+
+<pre><code>...
+&lt;div class="row"&gt;
+            &lt;h1&gt;CHANGE THIS HEADER&lt;/h1&gt;
+      &lt;ul class="nav nav-pills nav-stacked col-md-2"&gt;
+...
+</code></pre>
+
+<p>Save your changes and refresh the app in your browser to see them.</p>
+
+<h4>
+<a name="step-7-on-nitrousio---uploading-the-app" class="anchor" href="#step-7-on-nitrousio---uploading-the-app"><span class="octicon octicon-link"></span></a>Step 7 (On Nitrous.io) - Uploading the App</h4>
+
+<p>If you have uploaded the app before you need to increment the version in your app's package.json file, located in <code>apps/gold/package.json</code> , this will allow you to check any running version later, if this is your first time uploading an app skip this.</p>
+
+<pre><code>{
+    "name": "gold",
+    "version": "0.0.1",
+    "profile": "cli_test",
+    "private": true,
+    "scripts": {
+        "start": "node app.js",
+        "test": "grunt build --verbose"
+}
+</code></pre>
+
+<p>Now Upload the app using :</p>
+
+<pre><code>3vot upload 
+</code></pre>
+
+<p>The console will ask for the name of the app you want to upload, write the name <code>gold</code> in this case.</p>
+
+<pre><code>App: ( the name of the app you want to upload ): gold
+</code></pre>
+
+<p>This will upload the App to your profile, you'll later be able to publish it to the world.</p>
+
+<p>It will also deploy a demo of your app in <code>http://demo.3vot.com/tutorial/gold_0.0.xx</code> just change the last xx for the version of the app you want to check.</p>
+
+<h4>
+<a name="step-8-on-nitrousio---publishing-the-app" class="anchor" href="#step-8-on-nitrousio---publishing-the-app"><span class="octicon octicon-link"></span></a>Step 8 (On Nitrous.io) - Publishing the App</h4>
+
+<p>When you have a demo that you think it's a winner and want to publish it to the world just type:</p>
+
+<pre><code>3vot publish 
+</code></pre>
+
+<p>The console will ask for the name of the app you want to publish, in this case let's publish our app <code>gold</code>.</p>
+
+<pre><code>gold
+</code></pre>
+
+<p>You can access your published app in <code>demo.3vot.com/profile/app/index.html</code></p>
+
+<pre><code>http://demo.3vot.com/cli_test/gold/index.html
+</code></pre>
+
+<p>And you're done!</p>
+
+<h1>
+<a name="about-3vot" class="anchor" href="#about-3vot"><span class="octicon octicon-link"></span></a>About 3VOT</h1>
+
+<p>3vot is a company that packs the best open source modules, and the industry standard best practices into a Comercial Solution that enables every organisation to build their own apps. </p>
+
+<p>3VOT is currently in Private Beta, and we'll open and account for you if you are interested.</p></article>
+
+			</section>
+		</div>
+	
+	</section>
+
+	<br><br>	
+
+
+	<div class="row ">
+		<div class="col-md-12 text-center bg-warning">
+			<br>
+			<h3 class="text-invert">Ask for your beta account now!</h3>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+					<div class="input-group">
+				    	<input type="text" class="form-control input-lg" placeholder="email@example.com">
+				    	<span class="input-group-btn">
+				    		<button class="btn btn-default btn-lg text-warning" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+				    	</span>
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+			<br><br>
+		</div>
+
+	</div>
+
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
